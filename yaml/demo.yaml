@@ -1,0 +1,23 @@
+name: # 项目名称
+server:
+  - addr: # 服务器地址
+    port: # ssh端口号
+    user: # ssh用户名
+    password: # ssh密码
+
+
+build:
+  command:
+    - # 编译命令（执行本地shell）
+
+deploy:
+  scp: # scp上传文件，本地 ----> 服务器
+    command:
+      - # 上传前执行的shell命令（服务器端）
+    filePath: # 本地文件路径
+    sshPath:
+      - # 服务器端文件路径（非目录）可以是多个，对应多个服务器
+  action:
+    - command:
+        - #上传文件后执行的命令
+
